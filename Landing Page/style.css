@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 100vw;
+    position: relative;
+}
+.bg-image{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100vh;
+    z-index: -10;
+}
+.nav{
+    width: 100%;
+    /* background-color: rgba(252, 176, 176, 0.209); */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+.title{
+    font-size: x-large;
+    color: firebrick;
+    font-weight:900;
+}
+.sections{
+    display: flex;
+    gap: 2rem;
+    font-size: large;
+}
+.section{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.section:hover{
+    color: red;
+    
+}
+.hero-section{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+}
+.heading-1{
+    font-size:xx-large;
+    font-weight: 800;
+    color: darkslategray;
+    text-align: center;
+}   
+.heading-2{
+    font-size: xx-large;
+    font-weight: 800;
+    color:cornflowerblue;
+    text-align: center;
+}
+
+.signup{
+    width: 100vw;
+    padding: 2rem 5rem;
+    margin-top: 4rem;
+    background-color: skyblue;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+.email{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+.btn{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: tomato;
+}
+.btn:hover{
+    background-color: salmon;
+    transition: all;
+    transition-duration: 200ms;
+}
+.product{
+    width: 60%;
+    margin: 6rem auto;
+    
+}
+.product h2{
+    font-size: xx-large;
+    text-align: center;
+}
+.product div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+.product-img{
+    width: 300%;
+    height: 60vh;
+}
+.para{
+    font-size: large;
+}
+.benefits h2{
+    font-size: xx-large;
+    text-align: center;
+}
+.benefits div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+.benefits-img{
+    width: 40%;
+    height: 60vh;
+}
+.testimonial{
+    position: relative;
+    width: 83%;
+    margin: 50px auto;
+}
+.testimonial h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+.box{
+    border: 2px solid black;
+    margin-top: 100px;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+.profile{
+    position: absolute;
+    width: 83%;
+    top: 70px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-img{
+    position: relative;
+    width: 100px;
+    border-radius:50px;
+    z-index: 10;
+}
+.para{
+    font-style: italic;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 100px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: skyblue;
+}
+.contact-head{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+.user-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.input-style{
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+}
+.message{
+    display: flex;
+    margin: 0 auto;
+}
+.btn-submit{
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.btn-submit:hover{
+    background-color: lightslategray;
+    transition: all;
+    transition-duration: 400ms;
+}
+.textarea-style{
+    position: relative;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    width: 100%;
+    height: 7rem;
+}
+@media screen and (max-width:600px) {
+    .box{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .benefits div{
+        flex-direction: column-reverse;
+    }
+    .benefits-img{
+        width: 100%;
+        height: 40vh;
+    }
+    .benefits{
+        padding: 1rem;
+    }
+    .product{
+        width: 100%;
+        margin: 6rem auto;
+        padding: 1rem;
+    }
+    .product div{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .product-img{
+        width: 100%;
+        height: 100%;
+    }
+    .signup{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0rem;
+    }
+    .hero-section{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:900px) {
+    .user-info{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .message{
+        max-width: 215px;
+    }
+    
+}
